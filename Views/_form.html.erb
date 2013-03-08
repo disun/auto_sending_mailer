@@ -1,0 +1,111 @@
+<%= form_for(@acd) do |f| %>
+ 
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="row">
+  <div class="one columns">
+    <%= f.label :first_name, :class=>"label right inline" %>
+  </div>
+  <div class="four columns end">
+    <%= f.text_field :first_name %>
+  </div>
+  </div>
+  <div class="row">
+  <div class="one columns">
+    <%= f.label :last_name, :class=>"label right inline" %>
+  </div>
+  <div class="four columns end">
+    <%= f.text_field :last_name %>
+  </div>
+  </div>
+  <div class="row">
+  <div class="one columns">
+    <%= f.label :email, :class=>"label right inline" %>
+  </div>
+  <div class="four columns end">
+    <%= f.text_field :email %>
+  </div>
+  </div>
+  <div class="row">
+  <div class="two columns">
+    <%= f.label :encrypted_password, :class=>"label right inline" %>
+  </div>
+  <div class="four columns end">
+    <%= f.text_field :encrypted_password %>
+  </div>
+  </div> 
+  <div class="row">
+  <div class="one columns">
+    <%= f.label :phone, :class=>"label right inline" %>
+  </div>
+  <div class="four columns end">
+    <%= f.text_field :phone %>
+  </div>
+  </div>
+  <div class="row">
+  <div class="one columns">
+    <%= f.label :skype, :class=>"label right inline" %>
+  </div>
+  <div class="four columns end">
+    <%= f.text_field :skype %>
+  </div>
+  </div>
+  <div class="row">
+  <div class="one columns">
+    <%= f.label :facebook, :class=>"label right inline" %>
+  </div>
+  <div class="four columns end">
+    <%= f.text_field :facebook %>
+  </div>
+  </div>
+  <div class="row">
+  <div class="one columns">
+    <%= f.label :twitter, :class=>"label right inline" %>
+  </div>
+  <div class="four columns end">
+    <%= f.text_field :twitter %>
+  </div>
+  </div>
+  <div class="row">
+  <div class="one columns">
+    <%= f.label :longitude, :class=>"label right inline" %>
+  </div>
+  <div class="four columns end">
+    <%= f.text_field :longitude %>
+  </div>
+  </div>
+  <div class="row">
+  <div class="one columns">
+    <%= f.label :latitude, :class=>"label right inline" %>
+  </div>
+  <div class="four columns end">
+    <%= f.text_field :latitude %>
+  </div>
+  </div>
+
+  <div class="row">
+	  <div class="one columns">
+	    <%= f.label :location, :class=>"label right inline" %>
+	  </div>
+	  <div class="four columns end">
+	    <%= f.text_field :location %>
+	  </div>
+ </div>
+  <div class="row">
+  	<div class="four columns">
+	  <div class="field">
+	  <%= f.label :architect, :class=>"label right inline" %> 
+	  <%= f.check_box :architect %>
+	  </div>
+	</div>
+	<div class="four columns end">
+	  <div class="field">
+	  <%= f.label :gc, :class=>"label right inline" %> 
+	  <%= f.check_box :gc %>
+	  </div>
+	</div>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
